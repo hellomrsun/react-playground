@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.less"],"names":[],"mappings":"AAAA,cACE,gBAAA,CAEA,wBAAA,CAAA,eAAA,CACA,eAAA,CACA,cACF","file":"RichTextEditor.c2f51b8d.chunk.css","sourcesContent":[".editor-class{\n  min-height: 300px;\n  border: 1px solid #F1F1F1;\n  border-top: none;\n  margin-top: -5px;\n  padding: 0 10px;\n}\n@primary-color: #1DA57A;"]}

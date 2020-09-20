@@ -1,2 +1,0 @@
-# react-playground
-react-learning
