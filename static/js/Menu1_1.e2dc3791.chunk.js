@@ -1,0 +1,2 @@
+(this["webpackJsonpsg-demo"]=this["webpackJsonpsg-demo"]||[]).push([[21],{1257:function(e,n,t){"use strict";t.r(n);var s=t(0),u=t.n(s);n.default=function(){return u.a.createElement("h1",null,"Menu1-1")}}}]);
+//# sourceMappingURL=Menu1_1.e2dc3791.chunk.js.map
