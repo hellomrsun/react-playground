@@ -1,0 +1,2 @@
+(this["webpackJsonpsg-demo"]=this["webpackJsonpsg-demo"]||[]).push([[40],{1256:function(n,t,c){"use strict";c.r(t),c.d(t,"export_txt_to_zip",(function(){return i}));var o=c(1257),e=c.n(o);function i(n,t,c,o){var i=new e.a,a=c||"file",r=o||"file",s=t,f="".concat(n,"\r\n");s.forEach((function(n){var t;t=n.toString(),f+="".concat(t,"\r\n")})),i.file("".concat(a,".txt"),f),i.generateAsync({type:"blob"}).then((function(n){saveAs(n,"".concat(r,".zip"))}),(function(n){alert("\u5bfc\u51fa\u5931\u8d25")}))}c(608)}}]);
+//# sourceMappingURL=40.0a6a1ad3.chunk.js.map
