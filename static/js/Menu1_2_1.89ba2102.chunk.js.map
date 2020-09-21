@@ -1,1 +1,0 @@
-{"version":3,"sources":["views/nested/menu1/menu1-2/menu1-2-1/index.jsx"],"names":["Menu1_2_1"],"mappings":"4GAAA,2BAKeA,UAJG,WAChB,OAAO","file":"static/js/Menu1_2_1.89ba2102.chunk.js","sourcesContent":["import React from \"react\";\r\nconst Menu1_2_1 = () => {\r\n  return <h1>Menu1-2-1</h1>;\r\n};\r\n\r\nexport default Menu1_2_1;"],"sourceRoot":""}
