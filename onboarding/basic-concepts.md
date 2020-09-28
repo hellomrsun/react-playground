@@ -48,7 +48,29 @@ More: https://zh-hans.reactjs.org/docs/react-component.html
 
 <br/>
 
-### **3. JSX JavaScript eXtension**
+### **3. JSX**
+
+JSX stands for JavaScript XML.
+
+JSX allows writing HTML in JavaScript code.
+
+JSX converts HTML tags into react elements.
+
+You are not required to use JSX, but JSX makes it easier to write React applications.
+
+**JSX Code:**
+```javascript
+const myelement = <h1>I Love JSX!</h1>;
+ReactDOM.render(myelement, document.getElementById('root'));
+```
+
+**Same code without JSX, with pure React**
+```javascript
+const myelement = React.createElement("h1", null, "I Love JSX!");
+ReactDOM.render(myelement, document.getElementById('root'));
+```
+
+To check yourself, you can try to play with babel compiler online: https://babeljs.io/repl
 
 <br/>
 
@@ -126,5 +148,73 @@ Redux is a pattern and library for **managing and updating application state**, 
 It serves as a centralized store for state that needs to be used across your entire application, with rules ensuring that the state can only be updated in a predictable fashion.
 
 <br/>
+
+
+### **9. Virtual DOM vs DOM**
+
+Just to get things straight - DOM stands for Document Object Model and is an abstraction of a structured text. For web developers, this text is an HTML code, and the DOM is simply called HTML DOM. Elements of HTML become nodes in the DOM.
+
+So, whenever we want to dynamicly change the content of the web page, we modify the DOM:
+
+```javascript
+var item = document.getElementById("myLI");
+item.parentNode.removeChild(item);
+```
+
+document is an abstraction of the root node, while getElementById, parentNode and removeChild are methods from HTML DOM API.
+
+The Virtual DOM (VDOM) is an in-memory representation of Real DOM. The representation of a UI is kept in memory and synced with the "real" DOM. 
+
+It's a step that happens between the render function being called and the displaying of elements on the screen. This entire process is called **reconciliation**.
+
+
+![](./resources/imgs/004_virtual_dom.png)
+
+
+
+https://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/
+
+
+<br/>
+
+### **10. Pure component**
+
+React.PureComponent is exactly the same as React.Component except that it handles the shouldComponentUpdate() method for you. When props or state changes, PureComponent will do a shallow comparison on both props and state. Component on the other hand won't compare current props and state to next out of the box. Thus, the component will re-render by default whenever shouldComponentUpdate is called.
+
+
+We have a lifecycle method called **shouldComponentUpdate** which by default returns true (Boolean) value.
+
+The purpose of the shouldComponentUpdate is we can custom implement the default behavior and decide when react should update or re-render the component.
+
+Generally we use state or props value to decide the update cycle. React has now provided us a PureComponent which does the comparison of state and props to decide the update cycle. We don’t need to override shouldComponentUpdate if we extend class with PureComponent.
+
+React does the shallow comparisons of current state and props with new props and state to decide whether to continue with next update cycle or not.
+
+
+<br/>
+
+
+### **11. What is State**
+
+State of a component is an object that holds some information that may change over the lifetime of the component. We should always try to make our state as simple as possible and minimize the number of stateful components.
+
+<br/>
+
+
+### **12. What is Props**
+
+
+Props are inputs to components. They are single values or objects containing a set of values that are passed to components on creation using a naming convention similar to HTML-tag attributes. They are data passed down from a parent component to a child component.
+
+The primary purpose of props in React is to provide following component functionality:
+
+- Pass custom data to your component.
+- Trigger state changes.
+- Use via this.props.reactProp inside component's render() method.
+
+<br/>
+
+
+
 
 
